@@ -2,8 +2,8 @@
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_coral.mk)
@@ -11,7 +11,7 @@ $(call inherit-product, device/google/coral/aosp_coral.mk)
 -include device/google/coral/device-lineage.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_coral
+PRODUCT_NAME := bliss_coral
 PRODUCT_MODEL := Pixel 4 XL
 PRODUCT_BRAND := google
 
