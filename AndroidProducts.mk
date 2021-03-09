@@ -19,11 +19,11 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_flame.mk \
     $(LOCAL_DIR)/aosp_coral_hwasan.mk \
     $(LOCAL_DIR)/aosp_flame_hwasan.mk \
-    $(LOCAL_DIR)/bliss_coral.mk \
-    $(LOCAL_DIR)/bliss_flame.mk
+    $(LOCAL_DIR)/colt_coral.mk \
+    $(LOCAL_DIR)/colt_flame.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_coral-userdebug \
     aosp_flame-userdebug \
-    bliss_coral-userdebug \
-    bliss_flame-userdebug
+    colt_coral-userdebug \
+    colt_flame-userdebug
