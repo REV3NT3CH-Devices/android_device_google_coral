@@ -1,17 +1,27 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2960
-TARGET_SCREEN_WIDTH := 1440
-
-# Inherit some common bliss stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Inherit some common KangOS stuff.
+$(call inherit-product, vendor/kangos/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_coral.mk)
 
 -include device/google/coral/device-lineage.mk
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2960
+TARGET_SCREEN_WIDTH := 1440
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# KangOS Stuff
+USE_GAPPS := true
+TARGET_INCLUDE_AOSP_REPLACEMENT := true
+
+# KangOS Props
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.kangos.maintainer=BigMarv
+
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := bliss_coral
+PRODUCT_NAME := kangos_coral
 PRODUCT_MODEL := Pixel 4 XL
 PRODUCT_BRAND := google
 
