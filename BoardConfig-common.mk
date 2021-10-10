@@ -199,6 +199,7 @@ endif
 # Graphics
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
+TARGET_USES_VULKAN := true
 
 # Display
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
