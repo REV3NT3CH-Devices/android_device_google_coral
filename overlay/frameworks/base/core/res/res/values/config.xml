@@ -558,4 +558,7 @@
         <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
         <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item>
     </string-array>
+
+    <!-- Ignore CNE from privacy (location) indicators -->
+    <string name="config_systemTelephonyPackage" translatable="false">com.qualcomm.qti.cne</string>
 </resources>
