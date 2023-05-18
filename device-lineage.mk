@@ -49,9 +49,10 @@ include hardware/google/pixel/lineage_health/device.mk
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
-# Parts
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    GoogleParts
+    GoogleParts \
+    NowPlayingOverlay
 
 # RCS
 PRODUCT_PACKAGES += \
