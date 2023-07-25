@@ -4,13 +4,25 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
+# Inherit some common AlphaDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_coral.mk)
 
 include device/google/coral/coral/device-lineage.mk
+
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# GAPPS
+WITH_GMS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+
+# Maintainer
+ALPHA_BUILD_TYPE := Official
+ALPHA_MAINTAINER := REV3NT3CH
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
