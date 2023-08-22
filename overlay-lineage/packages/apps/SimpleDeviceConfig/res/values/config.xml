@@ -39,7 +39,7 @@
         <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
 
         <!-- Now Playing (Pixel 2017) -->
-        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=232:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20221030-040107/manifest.json</item>
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=243:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20230212-030106/manifest.json</item>
         <item>device_personalization_services/NowPlaying__ambient_music_on_demand_enabled=true</item>
         <item>device_personalization_services/NowPlaying__ambient_music_on_demand_music_confidence=0.48</item>
         <item>device_personalization_services/NowPlaying__cloud_api_allowed=true</item>
