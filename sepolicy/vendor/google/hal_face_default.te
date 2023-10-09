@@ -49,6 +49,7 @@ userdebug_or_eng(`
 get_prop(hal_face_default, camera_config_prop)
 get_prop(hal_face_default, camera_prop)
 get_prop(hal_face_default, vendor_faceauth_prop)
+dontaudit hal_face_default default_prop:file r_file_perms;
 
 hwbinder_use(hal_face_default);
 
